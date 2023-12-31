@@ -816,7 +816,7 @@ class WorkerThread(QThread):
         env = AlphaSeer()
 
         # 创建已经训练好的DQN模型并加载训练好的权重
-        trained_model = DQN.load("DQN_Seer")
+        trained_model = DQN.load("model/DQN_Seer")
 
         # 在环境中使用模型进行预测
         obs = env.reset()  # 重置环境状态
